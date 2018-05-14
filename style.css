@@ -1,0 +1,74 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.wrapper{
+	width: 100%;
+	height: auto;
+}
+.box{
+	width: 20%;
+	height: 300px;
+	background-color: darkgrey;
+	float: left;
+	margin-right: 2px;
+}
+.box1{
+	width: 20%;
+	height: 300px;
+	background-color: darkgrey;
+	float: left;
+	margin-right: 2px;
+}
+.box2{
+	width: 20%;
+	height: 300px;
+	background-color: darkgrey;
+	float: left;
+	margin-right: 2px;
+}
+.box3{
+	width: 20%;
+	height: 300px;
+	background-color: darkgrey;
+	float: left;
+	margin-right: 2px;
+}
+box4{
+
+}
+box5{
+
+}
+.transformex{
+	width: 200px;
+	height: 200px;
+	border: 10px ridge #005c37;
+	/*margin: 50px auto;*/
+	background: radial-gradient(red,green,red);
+	/*transform: scale(1.5);*/
+}	
+.transformhover{
+	width: 200px;
+	height: 200px;
+	border: 10px ridge #005c37;
+	background: radial-gradient(green,red,green);
+}
+.transformhover:hover{
+	transform: scale(1.5);
+}
+.transformrotatex{
+	width: 200px;
+	height: 200px;
+	border: 10px ridge #005c37;
+	background: radial-gradient(blue,red,blue);
+	/*transform: rotate(160deg);*/
+	transform: rotateX(60deg);
+}
+.transformrotatey{
+	width: 200px;
+	height: 200px;
+	border: 10px ridge #005c37;
+	background: radial-gradient(blue,red,blue);
+	transform: rotateY(120deg);
+}
