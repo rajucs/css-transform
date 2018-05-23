@@ -1,0 +1,217 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.wrapper{
+	width: 100%;
+	height: auto;
+}
+.wrapper-inner{
+	background-color: lightblue;
+	width: 100%;
+	min-height: 340px;
+}
+.wrapper-inner h3{
+	text-align: center;
+}
+.box{
+	width: 20%;
+	height: 300px;
+	background-color: darkgrey;
+	float: left;
+	margin-right: 2px;
+}
+.box1{
+	width: 20%;
+	height: 300px;
+	background-color: darkgrey;
+	float: left;
+	margin-right: 2px;
+}
+.box2{
+	width: 20%;
+	height: 300px;
+	background-color: darkgrey;
+	float: left;
+	margin-right: 2px;
+}
+.box3{
+	width: 20%;
+	height: 300px;
+	background-color: darkgrey;
+	float: left;
+	margin-right: 2px;
+}
+.transformex{
+	width: 200px;
+	height: 200px;
+	border: 10px ridge #005c37;
+	/*margin: 50px auto;*/
+	background: radial-gradient(red,green,red);
+	/*transform: scale(1.5);*/
+}	
+.transformhover{
+	width: 200px;
+	height: 200px;
+	border: 10px ridge #005c37;
+	background: radial-gradient(green,red,green);
+}
+.transformhover:hover{
+	transform: scale(1.5);
+}
+.transformrotatex{
+	width: 200px;
+	height: 200px;
+	border: 10px ridge #005c37;
+	background: radial-gradient(blue,red,blue);
+	/*transform: rotate(160deg);*/
+	transition: width 2s;
+}
+.transformrotatex:hover{
+	transform: rotateX(60deg);
+	width: 270px;
+}
+.transformrotatey{
+	width: 200px;
+	height: 200px;
+	border: 10px ridge #005c37;
+	background: radial-gradient(blue,red,blue);
+	/*transform: rotateY(120deg);*/
+	transition: height 2s , transform 2s;
+	float: left;
+}
+.transformrotatey:hover{
+	/*width: 270px;*/
+	height: 250px;
+	transform: rotateY(180deg);
+}
+.wrapper-inner1{
+	background-color: blue;
+	width: 100%;
+	height: 400px;
+
+}
+.wrapper-inner1 h3{
+	text-align: center;
+}
+.transition{
+	width: 20%;
+	height: 370px;
+	background-color: hotpink;
+	float: left;
+}
+.onlytransition{
+	width: 120px;
+	height: 50px;
+	background-color: red;
+	transition: width 2s;
+}
+.onlytransition:hover{
+	width: 250px; 
+}
+.onlytransition-input input[type=text]{
+	width: 150px;
+	transition: width 2s ease-in-out;
+	margin-top: 5px;
+}
+.onlytransition-input input[type=text]:focus{
+	width: 200px;
+}
+.transitiondelay{
+	width: 20%;
+	height: 370px;
+	background-color: green;
+	float: left;
+}
+.trasitiondelay1{
+	width: 150px;
+	height: 60px;
+	background-color: red;
+	transition-delay: 3s;
+}
+.trasitiondelay1:hover{
+	width: 250px;
+}
+.transitionduration{
+	width: 20%;
+	height: 370px;
+	background-color: yellow;
+	float: left;
+}
+.transitionduration1{
+	width: 150px;
+	height: 60px;
+	background-color: red;
+	transition-duration: 2s;
+
+}
+.transitionduration1:hover{
+	width: 250px;
+}
+.transition-pr-div{
+	width: 20%;
+	height: 370px;
+	background-color: darkgrey;
+	float: left;
+}
+.transition-property{
+	width: 150px;
+	height: 60px;
+	background-color: red;
+	transition-property: width,height;
+	transition-duration: 2s;
+}
+.transition-property:hover{
+	width: 250px;
+	height: 100px;
+}	
+
+.containercircle{
+	background-color: #E5E5E5;
+	margin: 100px;
+	height: 200px;
+}
+.containercircle:hover & {
+
+}
+.circle,.circle0,.circle1,.circle2,.circle3,.circle4,.circle5{
+	width: 30px;
+	height: 30px;
+	margin: 10px;
+	border-radius: 50%;
+}
+
+.containercircle:hover .circle, .containercircle:hover .circle0, .containercircle:hover .circle1, .containercircle:hover .circle2, .containercircle:hover .circle3, .containercircle:hover .circle4, .containercircle:hover .circle5 {
+  transform: translateX(500px);
+}
+
+.circle0 {
+  background: PaleTurquoise;
+  transition: all 1.5s linear;
+}
+
+.circle1 {
+  background: salmon;
+  transition: all 1.5s ease;
+}
+
+.circle2 {
+  background: lightskyblue;
+  transition: all 1.5s ease-in;
+}
+
+.circle3 {
+  background: khaki;
+  transition: all 1.5s ease-out;
+}
+
+.circle4 {
+  background: mediumturquoise;
+  transition: all 1.5s ease-in-out;
+}
+
+.circle5 {
+  background: thistle;
+  transition: all 1.5s cubic-bezier(0, 1, 0.98, 0);
+}
